@@ -22,6 +22,8 @@ All of the necessary information to replication the modeling parameters is locat
 
 Each of these starts running simRNA on the subdirectories located within the cyrano_simulations/ directory. 
 
+**NOTE**: Remember to use the **config_temp.dat**, as it contains all of the parameters used in the SimRNA simulations for these models. 
+
 ## Using automated bash scripts for post processing
 The following scripts were made in order to semi-automate the post processing of the simulations returned from simRNA. Running the scripts in the following order will allow for a user to pull out pertinent information from the simRNA simulations. 
 
