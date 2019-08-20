@@ -46,6 +46,7 @@ The following scripts were made in order to semi-automate the post processing of
 ```
 ./makebackups.sh
 ```
+### Extra scripts for further post processing
 * The **rmsdvsenergy_plot.ipynb** python notebook was used for plotting the energy vs RMSD graphs for each of the different models. This can be opened in a jupyter notebook for evaluating the data in a dynamic fashion. 
 * First launch jupyter notebooks within anaconda
 ```
