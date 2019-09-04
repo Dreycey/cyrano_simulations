@@ -58,3 +58,10 @@ jupyter notebooks
 ```
 open rmsdvsenergy_plot.ipynb
 ```
+
+## For running the Rosetta full atomic minimizations:
+
+```
+for pdb_file in ~/Desktop/VARANI_LAB/DA_cyrano_2019_FINAL/DA_cyrano_2019_FINAL_2/lowest_energy_models/*; do ./rna_minimize.default.macosclangrelease -database ../../database/ -s $pdb_file MINMIZE_${pdb_file:96:10}.out; done
+
+```
