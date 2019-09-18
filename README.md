@@ -25,7 +25,7 @@ Each of these starts running simRNA on the subdirectories located within the cyr
 **NOTE**: Remember to use the **config_temp.dat**, as it contains all of the parameters used in the SimRNA simulations for these models. 
 
 ## Using automated bash scripts for post processing
-The following scripts were made in order to semi-automate the post processing of the simulations returned from simRNA. Running the scripts in the following order will allow for a user to pull out pertinent information from the simRNA simulations. 
+The following scripts were made in order to semi-automate the post processing of the simulations returned from simRNA (1). Running the scripts in the following order will allow for a user to pull out pertinent information from the simRNA simulations. 
 
 * The following scripts will extract the lowest energy model from each subdirectory, then obtain the RMSD vs Energy results. 
 ```
@@ -60,8 +60,12 @@ open rmsdvsenergy_plot.ipynb
 ```
 
 ## For running the Rosetta full atomic minimizations:
+* After installing the Rosetta software (2), the following bash command may be used to further perform an atomic minimization of the SimRNA models using the FARFAR force feild:
 
 ```
 for pdb_file in ~/Desktop/VARANI_LAB/DA_cyrano_2019_FINAL/DA_cyrano_2019_FINAL_2/lowest_energy_models/*; do ./rna_minimize.default.macosclangrelease -database ../../database/ -s $pdb_file MINMIZE_${pdb_file:96:10}.out; done
 
 ```
+# References 
+(1) Boniecki, Michal J., et al. "SimRNA: a coarse-grained method for RNA folding simulations and 3D structure prediction." Nucleic acids research 44.7 (2015): e63-e63.
+(2) Cheng, C. Y., Chou, F. C., & Das, R. (2015). Modeling complex RNA tertiary folds with Rosetta. In Methods in enzymology (Vol. 553, pp. 35-64). Academic Press.
