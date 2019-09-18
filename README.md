@@ -1,7 +1,7 @@
 # SimRNA modeling information
 * Author: Dreycey Albin
-* Date: 08/19/2019
-* Updates: 
+* Date: 08/19/2019; 09/18/2019
+* Updates: 09/18/2019- added references. Also added files for the lowest energy models and other file readers may be interested in evaluating.
 * SimRNA was used to computationally predict the 3D structure of Cyrano for this study. Attached here are some of the scripts that were used to automate the prediction and post processing of the computationally modeled structures. 
 
 ## Unpacking the data file
